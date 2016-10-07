@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="hw2_understand"
+		module="hw2_understand$sources"
+		revision="1.0"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20161007145319"/>
+	<dependencies>
+		<module organisation="org.jgrapht" name="jgrapht-jdk1.5">
+			<revision name="0.7.3" status="release" pubdate="20080306124411" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jgrapht.sourceforge.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="GNU Lesser General Public License Version 2.1, February 1999" url="http://jgrapht.sourceforge.net/LGPL.html"/>
+				<metadata-artifact status="no" details="" size="2719" time="0" location="/home/hady/.ivy2/cache/org.jgrapht/jgrapht-jdk1.5/ivy-0.7.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/jgrapht/jgrapht-jdk1.5/0.7.3/jgrapht-jdk1.5-0.7.3.pom"/>
+				<caller organisation="hw2_understand" name="hw2_understand$sources" conf="compile-internal, compile, provided, optional" rev="0.7.3" rev-constraint-default="0.7.3" rev-constraint-dynamic="0.7.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jgrapht-jdk1.5" type="jar" ext="jar" status="no" details="" size="189401" time="0" location="/home/hady/.ivy2/cache/org.jgrapht/jgrapht-jdk1.5/jars/jgrapht-jdk1.5-0.7.3.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/jgrapht/jgrapht-jdk1.5/0.7.3/jgrapht-jdk1.5-0.7.3.jar"/>
+					</artifact>
+					<artifact name="jgrapht-jdk1.5" type="src" ext="jar" extra-classifier="sources" status="successful" details="" size="312762" time="2217" location="/home/hady/.ivy2/cache/org.jgrapht/jgrapht-jdk1.5/srcs/jgrapht-jdk1.5-0.7.3-sources.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/jgrapht/jgrapht-jdk1.5/0.7.3/jgrapht-jdk1.5-0.7.3-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
