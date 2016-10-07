@@ -1,8 +1,8 @@
-# Use Understand® APIs to analyze two versions of a Java application
+# Analyze two versions of a Java application using Understand® APIs.
 
 
 This project is intended to get the difference between the call graph and dependency graph of the two versions.
-Calculate the transitive closure of the inheritance graph of any of these versions for a selected  types. The project uses Understand® (from Scitools) APIs to build a database of the two versions of the applications. Then use JgraphT libraray to get the subgraph isomorphic. Analysing the mapping between graphs can get the difference between them. 
+Calculate the transitive closure of the inheritance graph of any of these versions for a selected  types. The project uses Understand® (from Scitools) APIs to build a database of the two versions of the applications. Then use JgraphT library to get the subgraph isomorphic. Analyzing the mapping between graphs can get the difference between them. 
 
 More information can be found on :
 Call Graph: https://en.wikipedia.org/wiki/Call_graph
@@ -27,7 +27,7 @@ JgraphT: http://jgrapht.org/
 
 Clone the project to your local repository:
 ```
-git clone https://bitbucket.org/ametwally/ahmed_metwally_hw2.git
+git clone https://ametwally@bitbucket.org/ametwally/ahmed_metwally_hw2.git
 ```
 
 
