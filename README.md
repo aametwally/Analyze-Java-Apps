@@ -1,26 +1,18 @@
-# Calculate Halstead Complexity Measures
-
-This project is intended to calculate the Halstead complexity measures using the ASTParser. Halstead Complexity measures are software metrics introduced by Maurice Howard Halstead in 1977. These metrics are computed statically, without program execution. More information can be found on the wikipedia page: (https://en.wikipedia.org/wiki/Halstead_complexity_measures).
+# Use Understand APIs to analyse two versions of a Java application
 
 
-##Calculation
-First, we need to compute the following numbers, given the program source code:
+This project is intended to
 
-**n1** = the number of distinct operators  
-**n2** = the number of distinct operands  
-**N1** = the total number of operators  
-**N2** = the total number of operands  
+Get the difference between the call graph and dependency graph of the two versions.
+Calculate the transitive closure of the inheritance graph of any of these versions for a selected  types. The project uses Understand (from Scitools) APIs to build a database of the two versions of the applications. Then use JgraphT libraray to get the subgraph isomorphic. Analysing the mapping between graphs can get the the difference between them. 
 
-From these numbers, eight measures can be calculated:  
+More information can be found on :
+Call Graph:
+Dependency Graph:
+Inheritance Graph
+Understand APIs:
+Transitive Closure:
 
-**Program vocabulary:** n = n1 + n2  
-**Program length:** N = N1 + N2  
-**Calculated program length:** N'=n1*log2(n1)+n2*log2(n2)  
-**Volume:** V= N*log2(n)    
-**Difficulty:** D=  (n1/2)  * (N2/n2)    
-**Effort:** E= D*V  
-**Time required to program:** T= E/18 seconds  
-**Number of delivered bugs:** B=V/3000  
 
 
 
@@ -28,28 +20,54 @@ From these numbers, eight measures can be calculated:
 
 ### Prerequisities
 * JDK 8 and JRE 8 to be installed on the machine.
-* Gradle to be installed on the machine.
+* SBT to be installed on the machine.
+* Understand IDE installed on the machine.
+
 
 
 ### Installing
 
 Clone the project to your local repository:
 ```
-git clone https://ametwally@bitbucket.org/ametwally/hw1_ahmedmetwally.git
+git clone https://bitbucket.org/ametwally/ahmed_metwally_hw2.git
 ```
 
 
-Navigate to the project's main directory, then build the project using gradle 
+Copy the Understand jar file (in my case it is com.scitools.understand.plugin_1.1.3.jar)  to the lib directory
+
+
+Add the path of the 
+
+Add the following paths to the CLASSPATH Enviromental variables
+
+
+Add the following path to the PATH Environmental variable
+
+Example,for Linux users: open the ~/.bashrc and add the following. You need to replace [Path] by the absolute path of the directory where scitools package exists. 
+
+
+export PATH=$PATH:/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/scitools/bin/linux64
+export CLASSPATH=$CLASSPATH:[Path]/scitools/bin/linux64/Java/com.scitools.understand.plugin_1.1.3.jar
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:[Path]/scitools/bin/linux64/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/java/jre1.8.0_91/lib/amd64/"
+
+
+
+
+Navigate to the project's main directory, then build the project using SBT 
 ```
-gradle build
+sbt compile
 ```
 
 
 To execute the program from command line:
 ```
-gradle execute
+sbt run
 ```
-Then the program should ask you to enter the directory absolute path that you wish to calculate the halstead complexity measures for. Once you provide a valid directory absolute path, the program should return the 8 metrics of healsted complexity measures. 
+
+
+Then the program should ask you to enter the absolute path of the udb database file of the two versions. that you wish to calculate the halstead complexity measures for. Once you provide a valid directory absolute path, the program should return the 8 metrics of healsted complexity measures. 
 
 
 
