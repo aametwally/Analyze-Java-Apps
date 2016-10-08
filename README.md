@@ -64,34 +64,10 @@ sbt run
 Then the program should ask you to enter the absolute path of the udb database file of the two versions. 
 
 
-### Need to Edit from here
-
-that you wish to calculate the halstead complexity measures for. Once you provide a valid directory absolute path, the program should return the 8 metrics of healsted complexity measures. 
-
-
 
 datasets/Halstead_sub.udb
 
 ### Example
-There are two datasets in test_datasets directory that can be used to test the program. It is also possible to download any java program and test the program on it.
-
-For example, download the Protein Family Alignment Annotation Tool (PFAAT) from sourcefodge (https://sourceforge.net/projects/pfaat/?source=typ_redirect)
-```
-wget https://sourceforge.net/projects/pfaat/files/OldFiles/pfaat-1_0-src.zip
-```
-
-Decompress the zipped file:
-```
-unzip pfaat-1_0-src.zip
-```
-
-Execute the CalcHalsteadMetrics program by:
-```
-build execute
-```
-
-Then provide the program with the absolute path of the unzipped PFAAT directory 
-
 
 
 
