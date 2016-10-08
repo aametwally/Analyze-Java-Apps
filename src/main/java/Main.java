@@ -1,14 +1,15 @@
 /**
  * Created by hady on 9/27/16.
  */
-import com.scitools.understand.*;
-import org.jgrapht.*;
-import org.jgrapht.graph.*;
-//import org.jgrapht.alg.isomorphism.VF2SubgraphIsomorphismInspector;
-import java.util.Iterator;
-import java.util.HashSet;
-//import org.jgrapht.alg.isomorphism.IsomorphicGraphMapping;
+
+import com.scitools.understand.Database;
+import org.jgrapht.DirectedGraph;
+import org.jgrapht.graph.DefaultEdge;
+
 import java.util.Set;
+
+//import org.jgrapht.alg.isomorphism.VF2SubgraphIsomorphismInspector;
+//import org.jgrapht.alg.isomorphism.IsomorphicGraphMapping;
 
 // TODO
 // Append Package name to the name of the class.method
@@ -18,6 +19,8 @@ import java.util.Set;
 // Test SBT
 // Handle exceptions (open database, no files, no dependency, graph, no inheritince graph)
 
+
+// This sentence is to test the sync with gitub
 
 public class Main {
 

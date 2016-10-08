@@ -7,29 +7,29 @@
 		revision="1.0"
 		conf="scala-tool"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20161007145319"/>
+		date="20161008144913"/>
 	<dependencies>
 		<module organisation="org.scala-lang" name="scala-compiler">
-			<revision name="2.10.4" status="release" pubdate="20140318164700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+			<revision name="2.10.5" status="release" pubdate="20150226195400" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
-				<metadata-artifact status="no" details="" size="2809" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.4/scala-compiler-2.10.4.pom"/>
-				<caller organisation="hw2_understand" name="hw2_understand$sources" conf="scala-tool" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0"/>
+				<metadata-artifact status="no" details="" size="2809" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.10.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.5/scala-compiler-2.10.5.pom"/>
+				<caller organisation="hw2_understand" name="hw2_understand$sources" conf="scala-tool" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="scala-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2058278" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.10.4-sources.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.4/scala-compiler-2.10.4-sources.jar"/>
+					<artifact name="scala-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2059305" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.10.5-sources.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-compiler/2.10.5/scala-compiler-2.10.5-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="jline">
-			<revision name="2.10.4" status="release" pubdate="20140318164600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+			<revision name="2.10.5" status="release" pubdate="20150226195400" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
 				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
-				<metadata-artifact status="no" details="" size="2607" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/jline/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/jline/2.10.4/jline-2.10.4.pom"/>
-				<caller organisation="hw2_understand" name="hw2_understand$sources" conf="scala-tool" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0"/>
+				<metadata-artifact status="no" details="" size="2607" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/jline/ivy-2.10.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/jline/2.10.5/jline-2.10.5.pom"/>
+				<caller organisation="hw2_understand" name="hw2_understand$sources" conf="scala-tool" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="1.0"/>
 				<artifacts>
-					<artifact name="jline" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="58779" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/jline/srcs/jline-2.10.4-sources.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/jline/2.10.4/jline-2.10.4-sources.jar"/>
+					<artifact name="jline" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="58779" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/jline/srcs/jline-2.10.5-sources.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/jline/2.10.5/jline-2.10.5-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
@@ -47,25 +47,25 @@
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-reflect">
-			<revision name="2.10.4" status="release" pubdate="20140318164700" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+			<revision name="2.10.5" status="release" pubdate="20150226195400" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html    "/>
-				<metadata-artifact status="no" details="" size="2647" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4.pom"/>
-				<caller organisation="hw2_understand" name="hw2_understand$sources" conf="scala-tool" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/"/>
+				<metadata-artifact status="no" details="" size="2647" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.10.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.5/scala-reflect-2.10.5.pom"/>
+				<caller organisation="hw2_understand" name="hw2_understand$sources" conf="scala-tool" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.10.5/"/>
 				<artifacts>
-					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="434883" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.4-sources.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.4/scala-reflect-2.10.4-sources.jar"/>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="435463" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.10.5-sources.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-reflect/2.10.5/scala-reflect-2.10.5-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.scala-lang" name="scala-library">
-			<revision name="2.10.4" status="release" pubdate="20140318164600" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+			<revision name="2.10.5" status="release" pubdate="20150226195400" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.10.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
 				<license name="BSD-like" url="http://www.scala-lang.org/downloads/license.html          "/>
-				<metadata-artifact status="no" details="" size="2487" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.4.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4.pom"/>
-				<caller organisation="hw2_understand" name="hw2_understand$sources" conf="scala-tool" rev="2.10.4" rev-constraint-default="2.10.4" rev-constraint-dynamic="2.10.4" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.10.4/"/>
+				<metadata-artifact status="no" details="" size="2487" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-library/ivy-2.10.5.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5.pom"/>
+				<caller organisation="hw2_understand" name="hw2_understand$sources" conf="scala-tool" rev="2.10.5" rev-constraint-default="2.10.5" rev-constraint-dynamic="2.10.5" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.10.5/"/>
 				<artifacts>
-					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1062421" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.4-sources.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.4/scala-library-2.10.4-sources.jar"/>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1064274" time="0" location="/home/hady/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.5-sources.jar">
+						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scala-lang/scala-library/2.10.5/scala-library-2.10.5-sources.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>

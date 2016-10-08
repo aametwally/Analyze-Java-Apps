@@ -4,7 +4,7 @@
 		module="hw2_understand"
 		revision="1.0"
 		status="integration"
-		publication="20161007145416"
+		publication="20161007151932"
 	>
 		<description>
 		HW2_Understand
@@ -32,8 +32,13 @@
 		<artifact name="hw2_understand" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.4" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.10.4" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.jgrapht" name="jgrapht-jdk1.5" rev="0.7.3" conf="compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.5" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.5" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.jgrapht" name="jgrapht-ext" rev="1.0.0" conf="compile->default(compile)"/>
+		<dependency org="org.tinyjee.jgraphx" name="jgraphx" rev="2.0.0.1" conf="compile->default(compile)"/>
+		<dependency org="org.jgrapht" name="jgrapht-core" rev="1.0.0" conf="compile->default(compile)"/>
+		<dependency org="org.antlr" name="antlr4-runtime" rev="4.5.3" conf="compile->default(compile)"/>
+		<dependency org="jgraph" name="jgraph" rev="5.13.0.0" conf="compile->default(compile)"/>
+		<dependency org="org.jgrapht" name="jgrapht-demo" rev="1.0.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

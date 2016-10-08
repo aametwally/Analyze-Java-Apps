@@ -1,45 +1,15 @@
-[0m[[0mdebug[0m] [0mInvalidating /home/hady/.ivy2/cache/org.jgrapht/jgrapht-core/jars/jgrapht-core-0.9.1.jar: class org.jgrapht.graph.DefaultDirectedGraph now provided by /home/hady/.ivy2/cache/org.jgrapht/jgrapht-jdk1.5/jars/jgrapht-jdk1.5-0.7.3.jar[0m
-[0m[[0mdebug[0m] [0mInvalidating /home/hady/IdeaProjects/HW2_Understand/lib/com.scitools.understand.plugin_1.1.3.jar: class com.scitools.understand.Database now provided by /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/lib/com.scitools.understand.plugin_1.1.3.jar[0m
-[0m[[0mdebug[0m] [0m[0m
-[0m[[0mdebug[0m] [0mInitial source changes: [0m
-[0m[[0mdebug[0m] [0m	removed:Set(/home/hady/IdeaProjects/HW2_Understand/src/main/java/GraphAlg.java, /home/hady/IdeaProjects/HW2_Understand/src/main/java/Main.java, /home/hady/IdeaProjects/HW2_Understand/src/main/java/UnderstandAPI.java)[0m
-[0m[[0mdebug[0m] [0m	added: Set(/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/ConnUnderstandDB.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/DependencyGraph.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/TransitiveClosure.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Isomorphism.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/InheritanceGraph.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Main.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/CallGraph.java)[0m
-[0m[[0mdebug[0m] [0m	modified: Set()[0m
-[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
-[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
-[0m[[0mdebug[0m] [0mModified binary dependencies: Set(/home/hady/.ivy2/cache/org.jgrapht/jgrapht-core/jars/jgrapht-core-0.9.1.jar, /home/hady/IdeaProjects/HW2_Understand/lib/com.scitools.understand.plugin_1.1.3.jar)[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/ConnUnderstandDB.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/DependencyGraph.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/TransitiveClosure.java, /home/hady/IdeaProjects/HW2_Understand/src/main/java/Main.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Isomorphism.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/InheritanceGraph.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Main.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/CallGraph.java, /home/hady/IdeaProjects/HW2_Understand/src/main/java/GraphAlg.java, /home/hady/IdeaProjects/HW2_Understand/src/main/java/UnderstandAPI.java)[0m
-[0m[[0mdebug[0m] [0m[0m
-[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
-[0m[[0mdebug[0m] [0m	product: Set()[0m
-[0m[[0mdebug[0m] [0m	binary dep: Set(/home/hady/IdeaProjects/HW2_Understand/src/main/java/UnderstandAPI.java, /home/hady/IdeaProjects/HW2_Understand/src/main/java/Main.java)[0m
-[0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/ConnUnderstandDB.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/DependencyGraph.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/TransitiveClosure.java, /home/hady/IdeaProjects/HW2_Understand/src/main/java/Main.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Isomorphism.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/InheritanceGraph.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Main.java, /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/CallGraph.java, /home/hady/IdeaProjects/HW2_Understand/src/main/java/GraphAlg.java, /home/hady/IdeaProjects/HW2_Understand/src/main/java/UnderstandAPI.java)[0m
-[0m[[0mdebug[0m] [0mRecompiling all 7 sources: invalidated sources (10) exceeded 50.0% of all sources[0m
-[0m[[0minfo[0m] [0mCompiling 7 Java sources to /home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/target/classes...[0m
-[0m[[0mdebug[0m] [0mAttempting to call com.sun.tools.javac.api.JavacTool@7904d389 directly...[0m
-[0m[[31merror[0m] [0m/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Isomorphism.java:3: package org.jgrapht.alg.isomorphism does not exist[0m
-[0m[[31merror[0m] [0morg.jgrapht.alg.isomorphism.IsomorphicGraphMapping[0m
-[0m[[31merror[0m] [0m/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Isomorphism.java:4: package org.jgrapht.alg.isomorphism does not exist[0m
-[0m[[31merror[0m] [0morg.jgrapht.alg.isomorphism.VF2SubgraphIsomorphismInspector[0m
-[0m[[31merror[0m] [0m/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Main.java:7: package org.jgrapht.alg.isomorphism does not exist[0m
-[0m[[31merror[0m] [0morg.jgrapht.alg.isomorphism.VF2SubgraphIsomorphismInspector[0m
-[0m[[31merror[0m] [0m/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Main.java:10: package org.jgrapht.alg.isomorphism does not exist[0m
-[0m[[31merror[0m] [0morg.jgrapht.alg.isomorphism.IsomorphicGraphMapping[0m
-[0m[[31merror[0m] [0m/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Isomorphism.java:21: cannot find symbol[0m
-[0m[[31merror[0m] [0m  symbol:   class VF2SubgraphIsomorphismInspector[0m
-[0m[[31merror[0m] [0m  location: class Isomorphism[0m
-[0m[[31merror[0m] [0mVF2SubgraphIsomorphismInspector[0m
-[0m[[31merror[0m] [0m/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Isomorphism.java:21: cannot find symbol[0m
-[0m[[31merror[0m] [0m  symbol:   class VF2SubgraphIsomorphismInspector[0m
-[0m[[31merror[0m] [0m  location: class Isomorphism[0m
-[0m[[31merror[0m] [0mVF2SubgraphIsomorphismInspector[0m
-[0m[[31merror[0m] [0m/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Isomorphism.java:32: cannot find symbol[0m
-[0m[[31merror[0m] [0m  symbol:   class IsomorphicGraphMapping[0m
-[0m[[31merror[0m] [0m  location: class Isomorphism[0m
-[0m[[31merror[0m] [0mIsomorphicGraphMapping[0m
-[0m[[31merror[0m] [0m/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/HW2/src/main/java/Isomorphism.java:38: cannot find symbol[0m
-[0m[[31merror[0m] [0m  symbol:   class IsomorphicGraphMapping[0m
-[0m[[31merror[0m] [0m  location: class Isomorphism[0m
-[0m[[31merror[0m] [0mIsomorphicGraphMapping[0m
-[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) javac returned nonzero exit code[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
