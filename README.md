@@ -99,7 +99,8 @@ Then the program should ask you to enter the path to a two udb database files of
 
 
 ### Implementation Notes:
-1. Call Graph:
-1. Dependency Graph:
-1. Isomorphism:
-1. Path:
+1. Call Graph: The nodes of this graph represent the names of all methods that the application has. There is an edge "directed edge" between two nodes when the one method call the other.
+1. Dependency Graph: The nodes of this graph represents the names of the classes that the application has. Two nodes should have edges if there is any coupling between them.
+1. Isomorphism: The current implementation chekc for the subgraph isomorphism, which is given two graphs A and B, the methods check if there is any subgraph of A that is isomorphic to B. If found, the method return the first alignment between the two graphs. Because it is really difficult to find a practical two applications that the whole new version is a subgraph of the old version, this method when tested with real applications it wont retun any alignmnet. In the test cases, I show how it works using a small number of nodes.
+1. Transitive closure: The implemented method takes one graph and it returns the same grapph but aded to it the edges of the transitive clousure. 
+1. There is an implemented option that allow the user to subgraph any graph based on set of nodes that the user provide. Of course, these provided nodes should be part of the main graph. If they are part of the graph, the program will return the subgraph along with the all transitive clousres.
