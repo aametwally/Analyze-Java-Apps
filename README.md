@@ -73,16 +73,19 @@ Then the program should ask you to enter the path to a two udb database files of
 * datasets/Halstead_sub_2.udb
 
 
+
+
+There is a couple of test cases implemented in this program. Also, there is one integration test that test fro callGraph and Isomorphism classes. These test cases ensure that every method works as expected. You can test them using:
+```
+sbt test
+```
+
+
+
 ### Example
 
 
 
-## Running the tests
-
-There are a couple of test cases implemented in this program. Also, there is one integration test that test fro callGraph and Isomorphism classes. These test cases ensure that every method works as expected. You can test them using:
-```
-sbt test
-```
 
 
 
