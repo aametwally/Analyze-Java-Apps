@@ -75,11 +75,16 @@ Then the program should ask you to enter the path to a two udb database files of
 ```
 
 
-There are a couple of test cases implemented in this program. Also, there is one integration test that test fro callGraph and Isomorphism classes. These test cases ensure that every method works as expected. You can test them using:
+There are a couple of test cases implemented in this program. These test cases ensure that every method works as expected. You can test them using:
 ```
-sbt test
+sbt "test-only CallGraphTest IsomorphismTest TransitiveClosureMethodsTest"
 ```
 
+
+Also, there is one integration test that test for callGraph and Isomorphism classes.
+```
+sbt "test-only IntegrationTest"
+```
 
 ### How to generate the database udb file using Understand®:
 1. Open Understand® IDE and import the java project.
