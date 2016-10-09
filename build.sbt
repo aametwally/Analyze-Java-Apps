@@ -1,4 +1,4 @@
-name := "CodeAnalysis_Isomorphism"
+name := "ahmed_metwally_hw2"
 
 version := "1.0"
 
