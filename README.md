@@ -35,14 +35,14 @@ Copy the Understand jar file (in my case it is com.scitools.understand.plugin_1.
 
 
 
-Configure environmental variables for Understand. Example, for Linux users: open the ~/.bashrc and add the following. You need to replace [Path] by the absolute path of the directory where scitools package exists. 
+Configure environmental variables for Understand. Example, for Linux users: open the ~/.bashrc and add the following. You need to replace [path-to-understand] by the absolute path of the directory where scitools package exists. 
 
 
 ```
-export PATH=$PATH:/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/scitools/bin/linux64
-export CLASSPATH=$CLASSPATH:[Path]/scitools/bin/linux64/Java/com.scitools.understand.plugin_1.1.3.jar
+export PATH=$PATH:[path-to-understand]/scitools/bin/linux64
+export CLASSPATH=$CLASSPATH:[path-to-understand]/scitools/bin/linux64/Java/com.scitools.understand.plugin_1.1.3.jar
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:[Path]/scitools/bin/linux64/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:[path-to-understand]/scitools/bin/linux64/
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:"/usr/java/jre1.8.0_91/lib/amd64/"
 ```
 
@@ -87,6 +87,11 @@ Then the program should ask you to enter the path to a two udb database files of
 * datasets/Halstead_sub_1.udb
 * datasets/Halstead_sub_2.udb
 ```
+
+
+The program should generate the Call Graph, Dependency Graph, and Inheritance Graph of the two applications. It also, check for the subgraph isomorphism. Furthermore, it gets the transitive closures for the two inheritance graphs. 
+
+Lastly, the program will ask the user if he wants to build the transitive closure from a set of vertices that are part of the inheritance graph. If it is not needed, just hit "N" 
 
 
 
