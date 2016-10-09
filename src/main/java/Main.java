@@ -21,6 +21,7 @@ public class Main {
         String DBPath1=null;
         String DBPath2=null;
 
+
         Scanner user_input = new Scanner( System.in );
         System.out.print("Enter DB path of the first version: ");
         DBPath1 = user_input.next( );
@@ -76,15 +77,67 @@ public class Main {
         SimpleDirectedGraph<String, DefaultEdge> inhG1= inh.createInhrGraph(db1);
         SimpleDirectedGraph<String, DefaultEdge> inhG2= inh.createInhrGraph(db2);
         System.out.println("Inheritance Graph 1= " + inhG1);
-        System.out.println("Inheritance Graph 1= " + inhG1);
+        System.out.println("Inheritance Graph 2= " + inhG2);
 
 
 
         // Transitive Closure of the inheritance graphs
         TransitiveClosureMethods t = new TransitiveClosureMethods();
+
         SimpleDirectedGraph<String, DefaultEdge> inhG1_TC= t.getTransitiveClosure(inhG1);
         SimpleDirectedGraph<String, DefaultEdge> inhG2_TC= t.getTransitiveClosure(inhG2);
         System.out.println("Transitive Closure of Inheritance Graph 1= " + inhG1_TC.toString());
         System.out.println("Transitive Closure of Inheritance Graph 2= " + inhG2_TC.toString());
+
+
+
+        /// Create a sub graph based on a selected node provided by the user
+        String choice = null;
+        System.out.println("\n\nDo you want to select specific nodes to calculate transitive closure on them: ");
+        System.out.print("If yes, type [Y]. If no, type [N]: ");
+
+        Scanner userChoice = new Scanner( System.in );
+        choice = userChoice.next( );
+
+        // get the nodes from the user
+        if(choice.equalsIgnoreCase("Y"))
+        {
+            Set<String> vertexElements= new HashSet();
+
+            while(true)
+            {
+                System.out.println("Enter a node");
+                choice=userChoice.next( );
+                System.out.println("Choice="+choice);
+                if(choice.equalsIgnoreCase("N"))
+                {
+                    break;
+                }
+                else
+                {
+                    vertexElements.add(choice);
+                }
+            }
+
+            // create the subgraph from the inheritance graph1 based on the selected vertices
+            SimpleDirectedGraph<String, DefaultEdge>  subgraphInhG1 = t.getSubgraph(inhG1, vertexElements);
+            if(!subgraphInhG1.vertexSet().isEmpty())
+            {
+                SimpleDirectedGraph<String, DefaultEdge> subgraphInhG1_TC= t.getTransitiveClosure(subgraphInhG1);
+                System.out.println("Transitive Closure of a subgraph from the InhG1= " + subgraphInhG1_TC.toString());
+            }
+            else
+            {
+                System.out.println("The selected nodes are not part of the primary graph");
+            }
+        }
+        else if (choice=="N")
+        {
+            ;
+        }
+        else
+        {
+            System.out.println("You entered wrong choice. The program will proceed as you typed [N]");
+        }
     }
 }
