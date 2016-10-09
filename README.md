@@ -22,7 +22,7 @@ Calculate the transitive closure of the inheritance graph of any of these versio
 
 
 
-### Installing
+### Installing, Testing, and Running
 
 Clone the project to your local repository:
 ```
@@ -86,4 +86,3 @@ sbt test
 1. Dependency Graph:
 1. Isomorphism:
 1. Path:
-
