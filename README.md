@@ -82,3 +82,8 @@ sbt test
 
 
 ### Implementation Notes:
+
+
+        // uncomment any of the following databases to test the code
+//        DBPath1="datasets/okio_1.0.0.udb";
+//        DBPath2="datasets/okio_1.2.0.udb";
