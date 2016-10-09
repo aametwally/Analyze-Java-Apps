@@ -66,28 +66,24 @@ sbt run
 
 
 Then the program should ask you to enter the path to a two udb database files of the two applications that you want the analyze the difference between them. I provide the following pre-built udb files in the "datasets" directory
-
+```
 * datasets/okio_1.0.0.udb
 * datasets/okio_1.2.0.udb
 * datasets/Halstead_sub_1.udb
 * datasets/Halstead_sub_2.udb
+```
 
 
 
-
-There is a couple of test cases implemented in this program. Also, there is one integration test that test fro callGraph and Isomorphism classes. These test cases ensure that every method works as expected. You can test them using:
+There are a couple of test cases implemented in this program. Also, there is one integration test that test fro callGraph and Isomorphism classes. These test cases ensure that every method works as expected. You can test them using:
 ```
 sbt test
 ```
 
 
-
-### Example
-
-
-
-
-
-
-
 ### Implementation Notes:
+1. Call Graph:
+1. Dependency Graph:
+1. Isomorphism:
+1. Path:
+
