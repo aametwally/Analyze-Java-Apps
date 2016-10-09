@@ -64,34 +64,10 @@ sbt run
 Then the program should ask you to enter the absolute path of the udb database file of the two versions. 
 
 
-### Need to Edit from here
-
-that you wish to calculate the halstead complexity measures for. Once you provide a valid directory absolute path, the program should return the 8 metrics of healsted complexity measures. 
-
-
 
 datasets/Halstead_sub.udb
 
 ### Example
-There are two datasets in test_datasets directory that can be used to test the program. It is also possible to download any java program and test the program on it.
-
-For example, download the Protein Family Alignment Annotation Tool (PFAAT) from sourcefodge (https://sourceforge.net/projects/pfaat/?source=typ_redirect)
-```
-wget https://sourceforge.net/projects/pfaat/files/OldFiles/pfaat-1_0-src.zip
-```
-
-Decompress the zipped file:
-```
-unzip pfaat-1_0-src.zip
-```
-
-Execute the CalcHalsteadMetrics program by:
-```
-build execute
-```
-
-Then provide the program with the absolute path of the unzipped PFAAT directory 
-
 
 
 
@@ -99,17 +75,10 @@ Then provide the program with the absolute path of the unzipped PFAAT directory
 
 There are a couple of test cases implemented in this program. These test cases ensure that every method works as expected. You can test them using:
 ```
-gradle test
+sbt test
 ```
 
 
 
 
 ### Implementation Notes:
-* I considered the 37 operators only in my implementation: =,>,<,!,~,?,->,==,>=,<=,!=,&&,||,++,--,+,-,\*,/,&,|,^,%,<<,>>,>>>,+=,-=,*=,/=,&=,|=,^=,%=,<<=,>>=,>>>=
-* I haven't tested for LambdaExpression as it is added in JLS8 API, and I am using JLS3
-* operator ":" captured in the switch and short version of for loop and if statements. 
-* negative numbers are counted as one operator "-" operator and a literal number operand. 
-* The program counts different parts of the import statements as operands.
-* In case of many java files exists in the directory. The overall number of the distinct operators in the whole application is the sum of the distinct number of operators in each file. So, if we have the same operator in two files, we will have two distinct operators in the whole application. The same for the operands because of different scopes.
-* In my implementation, I am checking if the parsed java code to the ASTparser has any syntax error or not. Sometime, with newer versions, the code return with a syntax error. At that case, The Calculate Halstead Complexity quits with an error.
