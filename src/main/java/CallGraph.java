@@ -9,6 +9,7 @@ import org.jgrapht.graph.*;
 
 public class CallGraph {
 
+    // create a directed call graph from the understand udb file.
     DirectedGraph<String, DefaultEdge> createCallGraph(Database db)
     {
         DirectedGraph<String, DefaultEdge> g =
@@ -21,8 +22,10 @@ public class CallGraph {
         for(Entity e : funcs) {
             g.addVertex(e.longname(true));
         }
+
+
+        // Find all calls for the given method/function and build them into a string
         for(Entity e : funcs){
-            // Find all calls for the given method/function and build them into a string
             StringBuilder paramList = new StringBuilder();
             Reference[] paramterRefs = e.refs("Call","",true);
 

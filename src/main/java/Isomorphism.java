@@ -43,7 +43,6 @@ public class Isomorphism {
                 if(!isomorphicGraphMap_1.hasVertexCorrespondence(node))
                 {
                     g1Notg2.add(node);
-//                    System.out.println(node + " is in g1 but g2");
                 }
             }
 

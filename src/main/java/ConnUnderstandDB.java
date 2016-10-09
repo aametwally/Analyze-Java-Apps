@@ -6,14 +6,12 @@ import com.scitools.understand.*;
  */
 public class ConnUnderstandDB {
 
+    //Open the Understand Database
     public Database readUnderstandDB(String projPath)
     {
-//        DirectedGraph<String, DefaultEdge> g =
-//                new DefaultDirectedGraph<String, DefaultEdge>(DefaultEdge.class);
 
         Database db=null;
         try{
-            //Open the Understand Database
             db = Understand.open(projPath);
 
         }catch (UnderstandException e){

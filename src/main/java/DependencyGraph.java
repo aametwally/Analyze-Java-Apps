@@ -7,6 +7,8 @@ import org.jgrapht.graph.*;
  * Created by Ahmed Metwally.
  */
 public class DependencyGraph {
+
+    // create a directed dependency graph from the understand udb file.
     DirectedGraph<String, DefaultEdge> createDepGraph(Database db)
     {
         DirectedGraph<String, DefaultEdge> g =
@@ -20,8 +22,8 @@ public class DependencyGraph {
             g.addVertex(e.longname(true));
         }
 
+        // generate the dependency graphs for the given class/interface
         for(Entity e : funcs){
-            // generate the dependency graphs for the given class/interface
             Reference[] paramterRefs = e.refs("Couple","",true);
 
             for( Reference pRef : paramterRefs){

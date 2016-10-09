@@ -8,7 +8,7 @@ import java.util.Set;
 import static junit.framework.TestCase.assertEquals;
 
 /**
- * Created by hady on 10/9/16.
+ * Created by Ahmed Metwally.
  */
 public class IntegrationTest {
 
@@ -16,13 +16,13 @@ public class IntegrationTest {
     public void integrationTest() throws Exception {
 
 
-//        Database db1=u.readUnderstandDB("../../datasets/okio_1.0.0.udb");
-//        System.out.println("Working Directory = " +
-//                System.getProperty("user.dir"));
+        System.out.println("Test callGraph and Isomorphism classes ...");
+        System.out.println("Working Directory = " +
+                System.getProperty("user.dir"));
 
 
-        String DBPath1="../../datasets/Halstead_sub_2.udb";
-        String DBPath2="../../datasets/Halstead_sub_1.udb";
+        String DBPath1="datasets/Halstead_sub_2.udb";
+        String DBPath2="datasets/Halstead_sub_1.udb";
         System.out.println("1st DB path is: " + DBPath1);
         System.out.println("2nd DB path is: " + DBPath2);
 

@@ -17,6 +17,8 @@ import static org.junit.Assert.*;
 public class IsomorphismTest {
 
     @Test
+
+    /// test createIsomorphism method
     public void createIsomorphism() throws Exception {
         System.out.println("Test createIsomorphism ...");
         DirectedGraph<String, DefaultEdge> g1 =

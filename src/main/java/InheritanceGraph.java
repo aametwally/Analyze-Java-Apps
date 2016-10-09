@@ -8,7 +8,7 @@ import org.jgrapht.graph.*;
  */
 public class InheritanceGraph {
 
-
+    // create a directed inheritance graph from the understand udb file.
     SimpleDirectedGraph<String, DefaultEdge> createInhrGraph(Database db)
     {
         SimpleDirectedGraph<String, DefaultEdge> g =
@@ -22,8 +22,9 @@ public class InheritanceGraph {
             g.addVertex(e.longname(true));
         }
 
+
+        // get all extended/implemented classes/interfaces
         for(Entity e : funcs){
-            // get all extended/implemented classes/interfaces
             Reference[] paramterRefs = e.refs("implement,extend","",true);
 
             for( Reference pRef : paramterRefs){

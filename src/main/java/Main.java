@@ -9,25 +9,18 @@ import org.jgrapht.graph.*;
 import java.util.*;
 
 
-// TODO:
-// Append Package name to the name of the class.method
-// Add README FIle.
-// Integration Test
-// Handle exceptions (open database, no files, no dependency, graph, no inheritance graph)
-// Add getting parameters name from user.
-// Why rerun from sbt doesnt work because eof classloader
-// Why importing methods
-// How to sync with github
-// figure out the relative path
-
-
 public class Main {
 
     public static void main(String[] args) {
+
+        System.out.println("Working Directory = " +
+                System.getProperty("user.dir"));
+
+
         // get the path of the two udb file of the two application
         String DBPath1=null;
         String DBPath2=null;
-//
+
         Scanner user_input = new Scanner( System.in );
         System.out.print("Enter DB path of the first version: ");
         DBPath1 = user_input.next( );
@@ -38,15 +31,6 @@ public class Main {
 
         // TODO: the following line gives an error when run using sbt commandline
         // user_input.close();
-
-//        DBPath1="/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/TestUnderstand/TestUnderstandOnHW1.udb";
-//        DBPath2="/home/hady/Dropbox/UIC/Courses/CS-474-OOP/HW2/TestUnderstand/TestUnderstandOnHW1.udb";
-
-//        DBPath1="/home/hady/IdeaProjects/HW2_Understand/datasets/Halstead_sub_1.udb";
-//        DBPath2="/home/hady/IdeaProjects/HW2_Understand/datasets/Halstead_sub_2.udb";
-
-//        DBPath1="/home/hady/IdeaProjects/HW2_Understand/datasets/okio_1.0.0.udb";
-//        DBPath2="/home/hady/IdeaProjects/HW2_Understand/datasets/okio_1.0.0.udb";
 
         System.out.println("1st DB path is: " + DBPath1);
         System.out.println("2nd DB path is: " + DBPath2);
@@ -79,10 +63,10 @@ public class Main {
 
 
         // Get the nodes that exists in graph1 but graph2.
-        // This id done by checking if there is a subgraph of g1 that has g2
+        // This is done by checking if there is a subgraph of g1 that has g2
         // as an isomorphic subgraph
         Isomorphism iso = new Isomorphism();
-        Set<String> call_g1Notg2 = iso.getDifference(callG2, callG1, "Call");
+        Set<String> call_g1Notg2 = iso.getDifference(callG1, callG2, "Call");
         Set<String> dep_g1Notg2 = iso.getDifference(depG1, depG2, "Dependency");
 
 
@@ -93,6 +77,7 @@ public class Main {
         SimpleDirectedGraph<String, DefaultEdge> inhG2= inh.createInhrGraph(db2);
         System.out.println("Inheritance Graph 1= " + inhG1);
         System.out.println("Inheritance Graph 1= " + inhG1);
+
 
 
         // Transitive Closure of the inheritance graphs

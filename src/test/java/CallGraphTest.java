@@ -12,11 +12,18 @@ import static org.junit.Assert.*;
 public class CallGraphTest {
 
     @Test
+    // test the createCallGraph method.
     public void createCallGraph() throws Exception {
 
+
         System.out.println("Test createCallGraph ...");
+
+
+        System.out.println("Working Directory = " +
+                System.getProperty("user.dir"));
+
         ConnUnderstandDB u= new ConnUnderstandDB();
-        Database db1=u.readUnderstandDB("/home/hady/IdeaProjects/HW2_Understand/datasets/Halstead_sub_1.udb");
+        Database db1=u.readUnderstandDB("datasets/Halstead_sub_1.udb");
         CallGraph c= new CallGraph();
         DirectedGraph<String, DefaultEdge> calculatedG = c.createCallGraph(db1);
         DirectedGraph<String, DefaultEdge> expectedG =
