@@ -81,7 +81,7 @@ sbt test
 ```
 
 
-### How to generate the database udb file using Understand:
+### How to generate the database udb file using Understand®:
 1. Open Understand® IDE and import the java project.
 1. Selected the location where you should save the projects' udb file.
 1. when the importing finished successfully, you should find the generated udb file in the selected location. 
