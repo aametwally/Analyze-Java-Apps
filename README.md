@@ -2,7 +2,8 @@
 
 
 This project is intended to get the difference between the call graph and dependency graph of the two versions.
-Calculate the transitive closure of the inheritance graph of any of these versions for a selected  types. The project uses Understand® (from Scitools) APIs to build a database of the two versions of the applications. Then use JgraphT library to get the subgraph isomorphic. Analyzing the mapping between graphs can get the difference between them. More information can be found on :
+Calculate the transitive closure of the inheritance graph of any of these versions for a selected  types. The project uses Understand® (from Scitools) APIs to build a database of the two versions of the applications. Then use JgraphT library to get the subgraph isomorphic. Analyzing the mapping between graphs can get the difference between them. More information can be found on:
+
 * Call Graph: https://en.wikipedia.org/wiki/Call_graph
 * Dependency Graph: https://en.wikipedia.org/wiki/Dependency_graph
 * Understand® APIs: https://scitools.com/
