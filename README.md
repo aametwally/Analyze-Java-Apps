@@ -27,7 +27,7 @@ Calculate the transitive closure of the inheritance graph of any of these versio
 
 Clone the project to your local repository:
 ```
-git clone https://ametwally@bitbucket.org/ametwally/ahmed_metwally_hw2.git
+git clone https://github.com/aametwally/Analyze-Java-Apps.git
 ```
 
 
